@@ -211,7 +211,7 @@ export default function DiscordTextGenerator() {
           setCopyButtonText("Copy text as Discord formatted");
         }, 2000);
       })
-      .catch((err) => {
+      .catch(() => {
         if (copyCount > 2) return;
         alert(
           "Copying failed for some reason, let's try showing an alert, maybe you can copy it instead."
